@@ -1,11 +1,11 @@
 import SwiftUI
 
-struct MenuButton: View {
+struct MenuButton<Destination: View>: View {
     var title: String
-    var action: () -> Void
-
+    var destination: Destination
+    
     var body: some View {
-        Button(action: action) {
+        NavigationLink(destination: destination) {
             Text(title)
                 .padding()
                 .frame(width: 220)
@@ -34,19 +34,19 @@ struct ContentView: View {
                 }
                 Spacer(minLength: 1)
                 // ボタン1
-                MenuButton(title: "コーヒーをごちそうする", action:{})
+                MenuButton(title: "コーヒーをごちそうする", destination: NextView())
                 Spacer(minLength: 1)
                 // ボタン2
-                MenuButton(title: "お店を探す", action:{})
+                MenuButton(title: "お店を探す", destination: NextView())
                 Spacer(minLength: 1)
                 // ボタン3
-                MenuButton(title: "友達リスト", action:{})
+                MenuButton(title: "友達リスト", destination: NextView())
                 Spacer(minLength: 1)
                 // ボタン4
-                MenuButton(title: "マイページ", action:{})
+                MenuButton(title: "マイページ", destination: NextView())
                 Spacer(minLength: 1)
                 // ボタン5
-                MenuButton(title: "履歴", action:{})
+                MenuButton(title: "履歴", destination: NextView())
                 Spacer(minLength: 140)
             }
             .navigationBarItems(
