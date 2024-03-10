@@ -1,5 +1,22 @@
 import SwiftUI
 
+struct MenuButton: View {
+    var title: String
+    var action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .padding()
+                .frame(width: 220)
+                .background(Color.brown)
+                .foregroundColor(.white)
+                .fontWeight(.medium)
+                .cornerRadius(10)
+        }
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         NavigationStack {
@@ -17,64 +34,19 @@ struct ContentView: View {
                 }
                 Spacer(minLength: 1)
                 // ボタン1
-                Button(action: {
-                }) {
-                    Text("コーヒーをごちそうする")
-                        .padding()
-                        .frame(width: 220)
-                        .background(Color.brown)
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .cornerRadius(10)
-                }
+                MenuButton(title: "コーヒーをごちそうする", action:{})
                 Spacer(minLength: 1)
                 // ボタン2
-                Button(action: {
-                }) {
-                    Text("お店を探す")
-                        .padding()
-                        .frame(width: 220)
-                        .background(Color.brown)
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .cornerRadius(10)
-                }
+                MenuButton(title: "お店を探す", action:{})
                 Spacer(minLength: 1)
                 // ボタン3
-                Button(action: {
-                }) {
-                    Text("友達リスト")
-                        .padding()
-                        .frame(width: 220)
-                        .background(Color.brown)
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .cornerRadius(10)
-                }
+                MenuButton(title: "友達リスト", action:{})
                 Spacer(minLength: 1)
                 // ボタン4
-                Button(action: {
-                }) {
-                    Text("マイページ")
-                        .padding()
-                        .frame(width: 220)
-                        .background(Color.brown)
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .cornerRadius(10)
-                }
+                MenuButton(title: "マイページ", action:{})
                 Spacer(minLength: 1)
                 // ボタン5
-                Button(action: {
-                }) {
-                    Text("履歴")
-                        .padding()
-                        .frame(width: 220)
-                        .background(Color.brown)
-                        .foregroundColor(.white)
-                        .fontWeight(.medium)
-                        .cornerRadius(10)
-                }
+                MenuButton(title: "履歴", action:{})
                 Spacer(minLength: 140)
             }
             .navigationBarItems(
