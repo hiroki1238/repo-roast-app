@@ -8,6 +8,8 @@ struct NextView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct NextView_Previews: PreviewProvider {
+    static var previews: some View {
+        NextView()
+    }
 }

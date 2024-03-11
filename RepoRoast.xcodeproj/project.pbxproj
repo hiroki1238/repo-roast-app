@@ -12,6 +12,7 @@
 		176F5DC32B9C862100817226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176F5DC22B9C862100817226 /* Assets.xcassets */; };
 		176F5DC62B9C862100817226 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176F5DC52B9C862100817226 /* Preview Assets.xcassets */; };
 		176F5DCD2B9D96D700817226 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F5DCC2B9D96D700817226 /* NextView.swift */; };
+		176F5DCF2B9D9B9000817226 /* FriendListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176F5DCE2B9D9B9000817226 /* FriendListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		176F5DC22B9C862100817226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		176F5DC52B9C862100817226 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		176F5DCC2B9D96D700817226 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		176F5DCE2B9D9B9000817226 /* FriendListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				176F5DBE2B9C862000817226 /* RepoRoastApp.swift */,
 				176F5DC02B9C862000817226 /* ContentView.swift */,
+				176F5DCE2B9D9B9000817226 /* FriendListView.swift */,
 				176F5DCC2B9D96D700817226 /* NextView.swift */,
 				176F5DC22B9C862100817226 /* Assets.xcassets */,
 				176F5DC42B9C862100817226 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				176F5DC12B9C862000817226 /* ContentView.swift in Sources */,
 				176F5DBF2B9C862000817226 /* RepoRoastApp.swift in Sources */,
+				176F5DCF2B9D9B9000817226 /* FriendListView.swift in Sources */,
 				176F5DCD2B9D96D700817226 /* NextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -22,7 +22,10 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Spacer(minLength: 100)
-                Text("RepoRoast").foregroundColor(.white).fontWeight(.black).font(.largeTitle)
+                Text("RepoRoast")
+                    .foregroundColor(.white)
+                    .fontWeight(.black)
+                    .font(.largeTitle)
                 HStack {
                     Image(systemName: "cup.and.saucer.fill")
                         .foregroundColor(.white).imageScale(.large)
@@ -40,7 +43,7 @@ struct ContentView: View {
                 MenuButton(title: "お店を探す", destination: NextView())
                 Spacer(minLength: 1)
                 // ボタン3
-                MenuButton(title: "友達リスト", destination: NextView())
+                MenuButton(title: "友達リスト", destination: FriendListView())
                 Spacer(minLength: 1)
                 // ボタン4
                 MenuButton(title: "マイページ", destination: NextView())
